@@ -1,5 +1,7 @@
 # hgnn-incident-assistant
 
+English | [한국어](README.ko.md)
+
 ## What It Is
 
 A local Slack polling bot that watches Hogangnono incident channels, analyzes

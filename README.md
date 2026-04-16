@@ -1,5 +1,7 @@
 # hogangnono-test
 
+English | [한국어](README.ko.md)
+
 Toy projects, prototypes, and one-off experiments live here first.
 
 This repository is an incubator. Start small here, validate quickly, then move
@@ -29,6 +31,7 @@ Do not use this repository for:
 - Do not add root-level dependencies unless they are shared by multiple projects.
 - Do not commit secrets. Commit `.env.example` instead of `.env`.
 - When adding a project, update the `Project Index` in this file.
+- For user-facing docs, provide both `README.md` and `README.ko.md`, and link them at the top.
 
 ## Recommended Structure
 
