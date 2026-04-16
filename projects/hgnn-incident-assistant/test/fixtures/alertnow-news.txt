@@ -1,0 +1,26 @@
+AlertNow
+
+인시던트의 상태가 변경되었습니다.
+상태 : 생성 → 확인 (편집됨) 확인 #66351: hogangnono-api-v2-status-error 가 에러 상태로 들어갔습니다.
+최근 5분 동안 2 개의 에러가 발생했습니다.
+
+stack:
+
+[UnknownExceptionFilter] _Connection lost: The server closed the connection.,
+status: 500,
+request: {
+  "url": "/api/v2/news?isScrapOnly=false",
+  "method": "GET",
+  "headers": {
+    "host": "api-internal.hogangnono.com",
+    "user-agent": "node-superagent/3.8.3"
+  },
+  "params": {},
+  "query": {
+    "isScrapOnly": "false"
+  }
+}
+QueryFailedError: Connection lost: The server closed the connection.
+담당자: Mason Choi
+서비스: Hogangnono Application Alert
+확인한 사용자: Mason Choi | 2026-03-16 오전 9:27:00

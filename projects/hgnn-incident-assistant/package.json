@@ -1,0 +1,17 @@
+{
+  "name": "incident-assistant",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Local Slack polling bot that analyzes Hogangnono incidents with repository context",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "start:loop": "RUN_MODE=loop node src/index.mjs",
+    "start:scan": "RUN_MODE=scan node src/index.mjs",
+    "analyze:file": "node src/cli.mjs --file",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@slack/web-api": "^7.12.0"
+  }
+}

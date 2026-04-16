@@ -179,7 +179,7 @@ Add one row per project.
 
 | Project | Status | Summary | Path |
 | --- | --- | --- | --- |
-| TBD | planned | First experiment not added yet | `projects/<project-name>` |
+| hgnn-incident-assistant | active | Local Slack bot that analyzes AlertNow incidents with repository context | `projects/hgnn-incident-assistant` |
 
 Example row:
 
