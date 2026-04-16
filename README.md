@@ -38,10 +38,19 @@ Do not use this repository for:
 ```text
 .
 |-- README.md
+|-- README.ko.md
 |-- .gitignore
+|-- scripts/
+|   `-- new-project.sh
+|-- templates/
+|   `-- project/
+|       |-- README.md.template
+|       |-- README.ko.md.template
+|       `-- .env.example.template
 `-- projects/
     `-- <project-name>/
         |-- README.md
+        |-- README.ko.md
         |-- .env.example
         |-- package.json / pyproject.toml / requirements.txt
         |-- src/
@@ -56,9 +65,10 @@ If you are uploading a new toy project, do exactly this:
 2. Create `projects/<project-name>/`.
 3. Put all code, config, and assets inside that folder.
 4. Add a project-level `README.md`.
-5. Add `.env.example` if the project uses environment variables.
-6. Add the runtime manifest that matches the stack.
-7. Update the `Project Index` below.
+5. Add `README.ko.md` if the project needs a Korean doc.
+6. Add `.env.example` if the project uses environment variables.
+7. Add the runtime manifest that matches the stack.
+8. Update the `Project Index` below.
 
 Example:
 
@@ -73,14 +83,30 @@ Minimal scaffold example:
 ```sh
 mkdir -p projects/my-project/{src,test}
 touch projects/my-project/README.md
+touch projects/my-project/README.ko.md
 touch projects/my-project/.env.example
 ```
+
+Recommended scaffold command:
+
+```sh
+./scripts/new-project.sh my-project
+```
+
+This command creates:
+
+- `projects/my-project/README.md`
+- `projects/my-project/README.ko.md`
+- `projects/my-project/.env.example`
+- `projects/my-project/src/.gitkeep`
+- `projects/my-project/test/.gitkeep`
 
 ## Required Files Per Project
 
 Each project should include these files unless there is a clear reason not to:
 
 - `README.md`: what it is, why it exists, how to run it
+- `README.ko.md`: Korean version for user-facing docs
 - `.env.example`: required environment variables without real secrets
 - stack manifest: `package.json`, `pyproject.toml`, or `requirements.txt`
 - `src/`: application source code
@@ -112,6 +138,8 @@ this shape:
 
 ```md
 # <project-name>
+
+English | [한국어](README.ko.md)
 
 ## What It Is
 One-paragraph summary of the project.
@@ -145,6 +173,12 @@ If a person reads the project `README.md`, they should be able to answer:
 - why it exists
 - how to run it
 - what is still incomplete
+
+Template files are available at:
+
+- `templates/project/README.md.template`
+- `templates/project/README.ko.md.template`
+- `templates/project/.env.example.template`
 
 ## Definition Of Done For Adding A Project
 

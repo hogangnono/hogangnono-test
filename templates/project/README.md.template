@@ -1,0 +1,35 @@
+# __PROJECT_NAME__
+
+English | [한국어](README.ko.md)
+
+## What It Is
+
+One-paragraph summary of the project.
+
+## Why It Exists
+
+What question, workflow, or hypothesis this project is testing.
+
+## Stack
+
+- Node.js / Python / etc.
+- Main libraries or frameworks
+
+## How To Run
+
+1. Setup steps
+2. Install dependencies
+3. Start command
+
+## Environment Variables
+
+- List required variables
+- Point to `.env.example`
+
+## Current Status
+
+planned
+
+## Next Steps
+
+- Short list of the next things to validate

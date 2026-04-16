@@ -39,6 +39,13 @@
 |-- README.md
 |-- README.ko.md
 |-- .gitignore
+|-- scripts/
+|   `-- new-project.sh
+|-- templates/
+|   `-- project/
+|       |-- README.md.template
+|       |-- README.ko.md.template
+|       `-- .env.example.template
 `-- projects/
     `-- <project-name>/
         |-- README.md
@@ -78,6 +85,20 @@ touch projects/my-project/README.md
 touch projects/my-project/README.ko.md
 touch projects/my-project/.env.example
 ```
+
+권장 스캐폴드 명령:
+
+```sh
+./scripts/new-project.sh my-project
+```
+
+이 명령은 아래를 함께 만듭니다.
+
+- `projects/my-project/README.md`
+- `projects/my-project/README.ko.md`
+- `projects/my-project/.env.example`
+- `projects/my-project/src/.gitkeep`
+- `projects/my-project/test/.gitkeep`
 
 ## 프로젝트별 필수 파일
 
@@ -145,6 +166,12 @@ planned / active / paused / archived / promoted
 ```
 
 한국어 문서가 필요하면 `README.ko.md`를 추가하고, 상단에 반대쪽 언어 링크를 둡니다.
+
+템플릿 파일 위치:
+
+- `templates/project/README.md.template`
+- `templates/project/README.ko.md.template`
+- `templates/project/.env.example.template`
 
 프로젝트 README를 읽으면 아래 질문에 답할 수 있어야 합니다.
 
