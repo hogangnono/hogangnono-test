@@ -217,6 +217,7 @@ planned / active / paused / archived / promoted
 
 | Project | Status | Summary | Path |
 | --- | --- | --- | --- |
+| asm-cli | active | 하이브리드 검색, preview, resume, handoff를 제공하는 로컬 우선 AI 코딩 세션 매니저 | `projects/asm-cli` |
 | hgnn-incident-assistant | active | Local Slack bot that analyzes AlertNow incidents with repository context | `projects/hgnn-incident-assistant` |
 
 예시 행:

@@ -216,6 +216,7 @@ Add one row per project.
 
 | Project | Status | Summary | Path |
 | --- | --- | --- | --- |
+| asm-cli | active | Local-first session manager for AI coding agents with hybrid search, preview, resume, and handoff flows | `projects/asm-cli` |
 | hgnn-incident-assistant | active | Local Slack bot that analyzes AlertNow incidents with repository context | `projects/hgnn-incident-assistant` |
 
 Example row:
